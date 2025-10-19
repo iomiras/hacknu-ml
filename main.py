@@ -872,9 +872,7 @@ if __name__ == "__main__":
     print("\n🎬 Example 2: Generating storyboard...")
 
     SCRIPT = """
-    Aldar Köse tricks a greedy merchant in the bazaar by selling him
-    'magical' beans. The merchant pays gold, but later discovers the
-    beans are ordinary and realizes he's been outsmarted.
+    Aldar Kose approached a checkpoint with a sack and told the lazy guard it was full of goat hair. Curious, the guard peeked in and found only rocks—while he was distracted, Aldar slipped past with real goods hidden in his coat.
     """
 
     frames = generator.generate_storyboard(
