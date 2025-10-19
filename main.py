@@ -13,23 +13,23 @@ import os
 import sys
 
 # %%
-# os.system("pip uninstall -y bitsandbytes peft diffusers transformers accelerate huggingface_hub -q")
+os.system("pip uninstall -y bitsandbytes peft diffusers transformers accelerate huggingface_hub -q")
 
 # # ============================================================================
 # # CELL 2: Clean install with correct versions
 # # ============================================================================
-# print("📦 Installing dependencies...")
-# os.system("pip install -q huggingface_hub==0.20.3")
-# os.system("pip install -q transformers==4.36.2")
-# os.system("pip install -q diffusers==0.25.1")
-# os.system("pip install -q accelerate==0.26.1")
-# os.system("pip install -q peft==0.8.2")
-# os.system("pip install -q safetensors==0.4.1")
-# os.system("pip install openai")
-# os.system("pip install -q opencv-python pillow -q")
+print("📦 Installing dependencies...")
+os.system("pip install -q huggingface_hub==0.20.3")
+os.system("pip install -q transformers==4.36.2")
+os.system("pip install -q diffusers==0.25.1")
+os.system("pip install -q accelerate==0.26.1")
+os.system("pip install -q peft==0.8.2")
+os.system("pip install -q safetensors==0.4.1")
+os.system("pip install openai")
+os.system("pip install -q opencv-python pillow -q")
 
 # Block bitsandbytes
-# sys.modules['bitsandbytes'] = None
+sys.modules['bitsandbytes'] = None
 
 # %%
 class LoRAConfig:
